@@ -1,4 +1,5 @@
 # Flutter CI
+[![Workflow to upload APK to TestApp.io](https://github.com/odaga/flutter_ci/actions/workflows/ci.yaml/badge.svg)](https://github.com/odaga/flutter_ci/actions/workflows/ci.yaml)
 
 This repo is a test run on how to step and automate build workflow for flutter application. The goal is build and deploy and android apk for testers.
 
