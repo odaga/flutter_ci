@@ -6,7 +6,7 @@ on:
 
 jobs:
   export_android:
-
+    name: TestAppIo app distribution
     runs-on: ubuntu-latest
 
     steps:
