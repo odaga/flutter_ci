@@ -19,7 +19,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: upload APK to TestApp.io
-        uses: TestApp.io/github-actions@v5
+        uses:  testappio/github-action@v5
         with:
           api_token: ${{secrets.TESTAPPIO_API_TOKEN}}
           app_id: ${{secrets.TESTAPPIO_APP_ID}}
