@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   android:
     runs-on: ubuntu-latest
@@ -14,12 +15,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-
+          
       - name: Build release
         run: ./gradlew assembleDebug
-
-      - name: upload APK to TestApp.io
-        uses:  testappio/github-action@v5
+        
+      - name: Upload APK TestApp.io
+        uses: testappio/github-action@v5
         with:
           api_token: ${{secrets.TESTAPPIO_API_TOKEN}}
           app_id: ${{secrets.TESTAPPIO_APP_ID}}
@@ -28,5 +29,3 @@ jobs:
           git_release_notes: true
           include_git_commit_id: false
           notify: true
-
-
