@@ -33,4 +33,3 @@ jobs:
         uses: ncipollo/release-action@v1.10.0
         with:
          artifacts: "build/app/outputs/flutter-apk/*.apk"
-         token: $
