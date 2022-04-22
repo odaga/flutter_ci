@@ -19,8 +19,7 @@ jobs:
           flutter-version: '2.10.4'
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build apk --release
-      - run: flutter build appbundle
+      - run: flutter build apk
       - name: Upload Android apk to testapp.io for testing
         uses: testappio/github-action@v5
         with:
